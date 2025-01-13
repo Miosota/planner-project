@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+[data-theme="dark"] {
+  background-color: #272332;
+  color: white;
+  transition: all, 1s;
+}
+
+[data-theme="light"] {
+  background-color: white;
+  color: black;
+  transition: all, 1s;
+}
