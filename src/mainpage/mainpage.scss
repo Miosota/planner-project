@@ -1,0 +1,10 @@
+.main-page {
+    padding-top: 100px;
+}
+$sizeindex: calc(1vw + 1vh);
+
+.slides-section {
+    width: 100%;
+    overflow: hidden;
+    font-size: $sizeindex;
+}

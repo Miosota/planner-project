@@ -1,5 +1,5 @@
 import ThemeSwitcher from "../theme/themeswitcher";
-import "./navbar.css"
+import "./navbar.scss"
 import { useEffect, useState } from "react";
 
 

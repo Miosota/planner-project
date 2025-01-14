@@ -1,49 +1,12 @@
-import "./mainpage.css";
+import "./mainpage.scss";
+import Slides from "../slides/slides";
 
 function MainPage() {
     return (
         <main className="main-page">            
-            <section>
+            <section className="slides-section">
                 <h1>CREATE YOUR DAY</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit qui harum animi magnam ipsa id eos quae aliquam. Iure atque explicabo minus quo. Est libero earum iste suscipit cupiditate facilis.
-                </p>
+                <Slides />       
             </section>
         </main>
     );
