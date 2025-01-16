@@ -44,5 +44,5 @@ $transition: .75s cubic-bezier(.2, .6, 0, 1);
     transition: $transition ;
     transform: rotateY(180deg) !important;
     opacity: 0.1;
-    backface-visibility: visible;
+    backface-visibility: visible !important;
 }
