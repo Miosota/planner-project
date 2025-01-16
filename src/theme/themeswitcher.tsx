@@ -5,7 +5,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 // uses to change theme 
 
 function ThemeSwitcher() {
-    const [checked, setChecked] = React.useState(false);
+    const [checked, setChecked] = React.useState(true);
     const [theme, setTheme] = React.useState("light");
 
     const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {

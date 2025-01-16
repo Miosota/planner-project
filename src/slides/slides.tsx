@@ -2,31 +2,24 @@ import "./slides.scss";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import {Parallax, Controller, Mousewheel} from "swiper/modules";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SwiperCore from "swiper";
 
 SwiperCore.use([Controller]);
 
 function Slides() {
 
-    // const swiper = new Swiper('.swiper', {
-    //     freeMode: true, 
-    //     centeredSlides: true,
-    //     mousewheel: true,
-    //     parallax: true,
-    //     breakpoints: {
-    //         0: {
-    //             slidesPerView: 2.5,
-    //             spaceBetween: 20
-    //         },
-    //         680: {
-    //             slidesPerView: 3.5, 
-    //             spaceBetween: 60
-    //         }
-    //     }
-    // })
-
     const[controlledSwiper, setControlledSwiper] = useState(null);
+
+    //open slide
+    useEffect(() => {
+        document.querySelectorAll('.swiper-slide').forEach(item => {
+            item.addEventListener('click', (event) => {
+                item.classList.toggle("flipped");
+            })
+        });
+    });
+
 
     return (
        <> 
@@ -47,7 +40,10 @@ function Slides() {
             }}
             modules={[Parallax, Controller, Mousewheel]}
             controller={{control: controlledSwiper}}
-            mousewheel={true}
+            mousewheel={{
+                enabled: true,
+                releaseOnEdges: true
+            }}
             className="swiper_main"    > 
             {/* Additional required wrapper */}           
             <div className="swiper-wrapper">
@@ -59,27 +55,27 @@ function Slides() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/8.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/2.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/5.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/10.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>             
                  
@@ -94,8 +90,12 @@ function Slides() {
             parallax={true}
             spaceBetween={60}
             slidesPerView={3.5}
-            modules={[Parallax, Controller]}
-            onSwiper={setControlledSwiper}
+            modules={[Parallax, Controller, Mousewheel]}
+            onSwiper={setControlledSwiper} 
+            mousewheel={{
+                enabled: true,
+                releaseOnEdges: true
+            }}
             className="swiper_bg"    > 
             
             {/* Additional required wrapper */}           
@@ -108,27 +108,27 @@ function Slides() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/8.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/2.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/5.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/10.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>             
                  
