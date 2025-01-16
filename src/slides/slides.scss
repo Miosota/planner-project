@@ -9,7 +9,14 @@ $transition: .75s cubic-bezier(.2, .6, 0, 1);
     z-index: 0!important;
     top: -35vh;
     width: 100%;
-    height: 100%;
+    height: 150%;
+    // rotate: 15deg;
+    opacity: 0.15;
+    filter: saturate(20) blur(120px);
+}
+
+.swiper_bg .swiper-slide{
+    max-height: 100vh;
 }
 
 .swiper-wrapper {

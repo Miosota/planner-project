@@ -59,7 +59,7 @@ function Slides() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
@@ -95,8 +95,9 @@ function Slides() {
             spaceBetween={60}
             slidesPerView={3.5}
             modules={[Parallax, Controller]}
-            onSwiper={()=> setControlledSwiper}
+            onSwiper={setControlledSwiper}
             className="swiper_bg"    > 
+            
             {/* Additional required wrapper */}           
             <div className="swiper-wrapper">
                 {/*Slides*/}
@@ -107,7 +108,7 @@ function Slides() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/1.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
