@@ -1,5 +1,6 @@
 import "./mainpage.scss";
 import Slides from "../slides/slides";
+import Timer from "../timer/timer";
 
 function MainPage() {
     return (
@@ -10,8 +11,9 @@ function MainPage() {
             </section>
             <section>
                 <h1>Project will be ready in: </h1>
+                <Timer />
             </section>
-            
+
         </main>
     );
 }

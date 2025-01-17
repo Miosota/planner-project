@@ -50,36 +50,41 @@ function Slides() {
                 {/*Slides*/}
                 <SwiperSlide>
                     <div className="slides-item">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati nostrum esse quaerat magnam, repellat provident asperiores blanditiis. Alias nesciunt odio, numquam cum provident itaque tempora, assumenda, voluptatibus at officia maiores.</p>
                         <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/4.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit alias, deleniti, molestias sed corporis sunt natus obcaecati amet quaerat et quas repellendus vero consectetur laudantium recusandae ullam quae eius.</p>
                         <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/8.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto dolorum adipisci molestiae laborum dignissimos recusandae maiores perspiciatis ab nemo provident ipsa quisquam quis iure amet corrupti, corporis quae odio!</p>
                         <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto dolorum adipisci molestiae laborum dignissimos recusandae maiores perspiciatis ab nemo provident ipsa quisquam quis iure amet corrupti, corporis quae odio!</p>
                         <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/2.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto dolorum adipisci molestiae laborum dignissimos recusandae maiores perspiciatis ab nemo provident ipsa quisquam quis iure amet corrupti, corporis quae odio!</p>
                         <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/5.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto dolorum adipisci molestiae laborum dignissimos recusandae maiores perspiciatis ab nemo provident ipsa quisquam quis iure amet corrupti, corporis quae odio!</p>
                         <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/10.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>             
-                 
-                
+                                 
             </div>
         </Swiper>
 
