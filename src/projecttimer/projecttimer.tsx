@@ -11,13 +11,14 @@ function ProjectTimer() {
                 <span className="digit">{days}</span>
             </div>
             <div className="time-wrapper">
-                <span className="digit">{hours}</span>
+                {/* padStart will add 0 if length of number < 2*/}
+                <span className="digit">{hours.toString().padStart(2, "0")}</span>
             </div>
             <div className="time-wrapper">
-                <span className="digit">{minutes}</span>
+                <span className="digit">{minutes.toString().padStart(2, "0")}</span>
             </div>
             <div className="time-wrapper">
-                <span className="digit">{seconds}</span>
+                <span className="digit">{seconds.toString().padStart(2, "0")}</span>
             </div>
         </div>
     )

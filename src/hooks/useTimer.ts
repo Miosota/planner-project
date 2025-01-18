@@ -25,10 +25,13 @@ function useTimer(deadline: string, interval: number) {
             setTimeSpan(parsedDeadline - Date.now());
         }, interval);
 
+        console.log(timeSpan);
+
         setDays(Math.floor(timeSpan/DAY));
-    setHours(Math.floor(timeSpan/HOUR));
-    setMinutes(Math.floor(timeSpan/MINUTE));
-    setSeconds(Math.floor(timeSpan/SECOND));
+        setHours(Math.floor(timeSpan/HOUR)%24);
+        setMinutes(Math.floor(timeSpan/MINUTE)%60);
+        setSeconds(Math.floor(timeSpan/SECOND)%60);
+
         return () => {
             //clear interval to repeat functionality after every rendering 
             clearInterval(intervalId);

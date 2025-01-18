@@ -10,3 +10,9 @@ $sizeindex: calc(1vw + 1vh);
     font-size: $sizeindex;
     height: 100%;
 }
+
+.project-timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

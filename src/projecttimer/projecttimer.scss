@@ -4,10 +4,10 @@
 
     :not(:last-child)::after{
         content: ":";
-        font-size: 9vh;
+        font-size: 6rem;
     }
 
     .digit {
-        font-size: 10vh;
+        font-size: 6rem;
     }
 }
