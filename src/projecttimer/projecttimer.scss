@@ -1,0 +1,13 @@
+.project_timer {
+    display: flex;
+    justify-content: center;
+
+    :not(:last-child)::after{
+        content: ":";
+        font-size: 9vh;
+    }
+
+    .digit {
+        font-size: 10vh;
+    }
+}
