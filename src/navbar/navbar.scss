@@ -6,6 +6,7 @@
     background-color: rgba(19, 48, 47, 1);
     opacity: 1;
     z-index: 2;
+    color: #fff;
 
 }
 
@@ -13,4 +14,12 @@
     height: 50px;
     background-color: rgba(19, 48, 47, 0.7);
     transition: background-color, 0.5s;
+}
+
+.css-161ms7l-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked{
+    color: #297762 !important;
+}
+
+.css-161ms7l-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color: #297762 !important;
 }
