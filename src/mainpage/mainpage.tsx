@@ -13,7 +13,9 @@ function MainPage() {
                 <h1 style={{fontSize:"4rem"}}>Project will be ready in</h1>
                 <ProjectTimer />
             </section>
-
+            <footer style={{height:"60px", backgroundColor:"#000"}}>
+                <span style={{padding:"30px"}}>Contact information will be here</span>
+            </footer>
         </main>
     );
 }
