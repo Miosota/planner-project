@@ -32,10 +32,26 @@ $transition: .75s cubic-bezier(.2, .6, 0, 1);
     transform: rotateY(0) !important;
     border-radius: 10px;
 
-    p {
+    p.slide-description {
         display: none;
     }
+
+    p.slide-name {
+        display:inline;
+        position: absolute;
+        z-index: 1;
+        font-size: 2rem;
+        -webkit-text-stroke: 1px #fff;
+        -webkit-text-fill-color: transparent;
+    }
+
 }
+
+.slides-item {
+    display: flex;
+    justify-content: center;
+}
+
 
 .slide-img {
     width: 300%;
@@ -59,12 +75,16 @@ $transition: .75s cubic-bezier(.2, .6, 0, 1);
         background: linear-gradient(rgba(231, 225, 225, 0.3), rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)) !important ;
     }
 
-    p {
+    p.slide-description {
         display:inline;
         position: absolute;
         transform: rotateY(180deg);
         text-align: center;
         padding: 0 20px;
+    }
+
+    p.slide-name {
+        display:none;
     }
 }
 
