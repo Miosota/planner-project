@@ -114,32 +114,32 @@ function Slides() {
                 {/*Slides*/}
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/4.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/public/images/slides/4.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/8.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/public/images/slides/8.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/7.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/public/images/slides/7.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/2.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/public/images/slides/2.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/images/slides/5.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="20%" style={{backgroundImage: "url(/public/images/slides/5.jpg)"}}></div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slides-item">
-                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/images/slides/10.jpg)"}}></div>
+                        <div className="slide-img" data-swiper-parallax="30%" style={{backgroundImage: "url(/public/images/slides/10.jpg)"}}></div>
                     </div> 
                 </SwiperSlide>             
                  

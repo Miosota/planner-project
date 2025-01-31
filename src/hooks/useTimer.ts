@@ -25,7 +25,7 @@ function useTimer(deadline: string, interval: number) {
             setTimeSpan(parsedDeadline - Date.now());
         }, interval);
 
-        console.log(timeSpan);
+        // console.log(timeSpan);
 
         setDays(Math.floor(timeSpan/DAY));
         setHours(Math.floor(timeSpan/HOUR)%24);
