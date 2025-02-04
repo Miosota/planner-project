@@ -16,7 +16,8 @@ module.exports = {
             directory: path.join(__dirname, '/')
         },
         port: 8081,
-        open: true
+        //open a specified page in a browser (can be multiple) 
+        open: ['/dist/index.html']
     },
     devtool: 'inline-source-map',
     module:{
