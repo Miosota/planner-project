@@ -1,6 +1,7 @@
 const { watch } = require('fs');
 const path = require('path');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: 'development',
@@ -13,11 +14,12 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         static: {
-            directory: path.join(__dirname, '/')
+            directory: path.join(__dirname, '/public')
         },
         port: 8081,
         //open a specified page in a browser (can be multiple) 
-        open: ['/dist/index.html']
+        // open: ['/dist/index.html']
+        open: true
     },
     devtool: 'inline-source-map',
     module:{
@@ -46,6 +48,13 @@ module.exports = {
         modules: [__dirname, 'src', 'node_modules'],
         extensions: ['.*','.js', '.jsx', '.ts', '.tsx'],
     },
+    plugins: [
+        new CopyPlugin({
+          patterns: [
+            { from: './public/images', to: "images" },
+          ],
+        }),
+    ],
     // watch:true,  //repack after changes
 }
 

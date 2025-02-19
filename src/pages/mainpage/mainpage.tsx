@@ -1,6 +1,6 @@
 import "./mainpage.scss";
-import Slides from "../slides/slides";
-import ProjectTimer from "../projecttimer/projecttimer";
+import Slides from "../../slides/slides";
+import ProjectTimer from "../../projecttimer/projecttimer";
 
 function MainPage() {
     return (
