@@ -1,25 +1,24 @@
-import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
-import { Paper, Stack } from '@mui/material';
+import { Container, Paper, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './userpage.scss';
+import Grid from '@mui/material/Grid2';
 
 function stringToColor(string: string) {
     let hash = 0;
     let i;
 
-    /* eslint-disable no-bitwise */
-    for (i = 0; i < string.length; i += 1) {
-        hash = string.charCodeAt(i) + ((hash << 5) - hash);
+    for (i = 0; i < string.length; i++) {
+        hash = string.charCodeAt(i) + ((hash << 3) - hash);
     }
 
     let color = '#';
 
-    for (i = 0; i < 3; i += 1) {
+    for (i = 0; i < 3; i++) {
         const value = (hash >> (i * 8)) & 0xff;
+        //cut from the end
         color += `00${value.toString(16)}`.slice(-2);
     }
-    /* eslint-enable no-bitwise */
 
     return color;
 }
@@ -48,16 +47,34 @@ const Item = styled(Paper)(({ theme }) => ({
 function UserProfile() {
 
 
-
     return(
         <header className="header-profile">
-            <div className="container">
-                <Avatar {...stringAvatar('User Profile')} />
-                <Stack className='user-info'>
-                    <Item>Phone Number</Item>
-                    <Item>Email Address</Item>
-                </Stack>
-            </div>     
+            <Container className="container profile-container">
+                <div  className='user-avatar-conatiner'>
+                    <Avatar {...stringAvatar('User Name')} className='user-avatar' />
+                </div>                
+                <div className="user-data">
+                    <Grid container spacing={2} direction="row" sx={{justifyContent: "center",
+        alignItems: "stretch",}}>
+                        <Grid size={6}>
+                            <Item className='user-info'>
+                                <h2 className="user-profile_h2">Name</h2>
+                                <span className="user-profile_span">User Name</span>
+                                <h2 className="user-profile_h2">Age</h2>
+                                <span className="user-profile_span">User Age</span>
+                            </Item>
+                        </Grid>
+                        <Grid size={6}>
+                            <Item  className='user-info'>
+                                <h2 className="user-profile_h2">Phone Number</h2>
+                                <span className="user-profile_span">+7 123 563 78 98</span>
+                                <h2 className="user-profile_h2">Email Address</h2>
+                                <span className="user-profile_span">mail@google.com</span>
+                            </Item>
+                        </Grid>
+                    </Grid> 
+                </div>               
+            </Container>     
         </header>
     );
 }

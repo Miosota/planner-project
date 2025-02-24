@@ -3,6 +3,32 @@
     top: 100px;
 }
 .container {
-    display: flex;
-    justify-content: flex-start;
+    max-width: 1100px;
+    background-color: #13302F;
+    border-radius: 5px;
+
+    &.profile-container {        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .user-avatar-conatiner {
+        width: 15%;
+
+        .user-avatar{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .user-data {
+        width: 70%;
+        padding: 24px 0;
+
+        .user-info{
+            background-color: #7cbfad;
+        }
+    }
+
 } 
